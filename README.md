@@ -16,6 +16,6 @@ How to run the code:<br/><br/>
     pip install -r requirements.txt<br/>
 
 4. Run the code as follows<br/>
-    python3 test_ollama.py
-    python3 test_chromadb.py
-    python3 test_pdf_chromadb.py
+    python3 test_ollama.py<br/>
+    python3 test_chromadb.py<br/>
+    python3 test_pdf_chromadb.py<br/>
