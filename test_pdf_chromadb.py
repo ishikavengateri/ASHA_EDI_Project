@@ -32,7 +32,7 @@ DATA_FOLDER = Path("data")              # where your PDFs are
 DB_FOLDER = Path("chroma_db_pdf_test")  # temporary database, deleted at the end
 COLLECTION_NAME = "pdf_test"
 EMBED_MODEL = "nomic-embed-text"
-CHUNK_SIZE = 500                        # characters per chunk (about 80-100 words)
+CHUNK_SIZE = 1500                        # characters per chunk (about 80-100 words)
 OVERLAP = 100                           # characters shared between neighbouring chunks
 # Smaller chunks = each chunk is about ONE topic, so its embedding is sharper.
 # Run tune_chunks.py to measure which size works best for your PDFs.
@@ -40,7 +40,8 @@ BATCH_SIZE = 32                         # chunks sent to Ollama at a time
 TOP_RESULTS = 3                         # how many matches to show
 MARGIN = 0.15                           # top/bottom 15% of a page = header/footer zone
 REPEAT_FRACTION = 0.05                  # margin text on 5%+ of pages = header/footer
-DEFAULT_QUESTION = "What should an ASHA do if a newborn has fever?"
+# DEFAULT_QUESTION = "What should an ASHA do if a newborn has fever?"
+DEFAULT_QUESTION = "How to manage fever in a newborn?"
 # ---------------------------------------------
 
 
